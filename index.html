@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Trails - Discover Incredible India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Eco Trails</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" onclick="clearSearch()"><i class="fas fa-home nav-icon"></i>Home</a></li>
+                <li><a href="#destinations"><i class="fas fa-map-marked-alt nav-icon"></i>Destinations</a></li>
+                <li><a href="#stays"><i class="fas fa-bed nav-icon"></i>Stays</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle nav-icon"></i>About</a></li>
+                <li><a href="#contact"><i class="fas fa-phone nav-icon"></i>Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Disney+ Style Carousel -->
+        <div class="hero-carousel">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-card active" data-theme="landscape">
+                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080&q=80" alt="India Landscape">
+                    <div class="card-overlay">
+                        <h3>Incredible India</h3>
+                        <p>Diverse landscapes and rich heritage</p>
+                    </div>
+                </div>
+                <div class="carousel-card" data-theme="beach">
+                    <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080&q=80" alt="Goa Beaches">
+                    <div class="card-overlay">
+                        <h3>Goa Beaches</h3>
+                        <p>Sun, sand, and vibrant nightlife</p>
+                    </div>
+                </div>
+                <div class="carousel-card" data-theme="backwater">
+                    <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080&q=80" alt="Kerala Backwaters">
+                    <div class="card-overlay">
+                        <h3>Kerala Backwaters</h3>
+                        <p>Serene waters and lush greenery</p>
+                    </div>
+                </div>
+                <div class="carousel-card" data-theme="heritage">
+                    <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080&q=80" alt="Rajasthan Heritage">
+                    <div class="card-overlay">
+                        <h3>Rajasthan Heritage</h3>
+                        <p>Royal palaces and desert culture</p>
+                    </div>
+                </div>
+                <div class="carousel-card" data-theme="mountain">
+                    <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080&q=80" alt="Himalayan Mountains">
+                    <div class="card-overlay">
+                        <h3>Himalayan Mountains</h3>
+                        <p>Majestic peaks and spiritual journeys</p>
+                    </div>
+                </div>
+                <div class="carousel-card" data-theme="islands">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080&q=80" alt="Andaman Islands">
+                    <div class="card-overlay">
+                        <h3>Andaman Islands</h3>
+                        <p>Pristine beaches and crystal clear waters</p>
+                    </div>
+                </div>
+                <div class="carousel-card" data-theme="temple">
+                    <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080&q=80" alt="South India Temples">
+                    <div class="card-overlay">
+                        <h3>South India Temples</h3>
+                        <p>Ancient architecture and spirituality</p>
+                    </div>
+                </div>
+                <div class="carousel-card" data-theme="valley">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080&q=80" alt="Kashmir Valley">
+                    <div class="card-overlay">
+                        <h3>Kashmir Valley</h3>
+                        <p>Paradise on earth</p>
+                    </div>
+                </div>
+                <div class="carousel-card" data-theme="desert">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080&q=80" alt="Thar Desert">
+                    <div class="card-overlay">
+                        <h3>Thar Desert</h3>
+                        <p>Golden sands and camel safaris</p>
+                    </div>
+                </div>
+                <div class="carousel-card" data-theme="wildlife">
+                    <img src="https://images.unsplash.com/photo-1549366021-9f761d040a94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080&q=80" alt="Wildlife Sanctuaries">
+                    <div class="card-overlay">
+                        <h3>Wildlife Sanctuaries</h3>
+                        <p>Tigers, elephants, and biodiversity</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="carousel-nav prev" onclick="previousSlide()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-nav next" onclick="nextSlide()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+                <span class="indicator" onclick="goToSlide(3)"></span>
+                <span class="indicator" onclick="goToSlide(4)"></span>
+                <span class="indicator" onclick="goToSlide(5)"></span>
+                <span class="indicator" onclick="goToSlide(6)"></span>
+                <span class="indicator" onclick="goToSlide(7)"></span>
+                <span class="indicator" onclick="goToSlide(8)"></span>
+                <span class="indicator" onclick="goToSlide(9)"></span>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Incredible India</h1>
+            <p class="hero-subtitle">Explore the diverse landscapes, rich culture, and timeless heritage of India</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search destinations in India...">
+                    <button class="search-btn" onclick="searchDestination()">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="search-suggestions" id="searchSuggestions"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2 class="section-title">Popular Destinations</h2>
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Destinations will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stays Section -->
+    <section id="stays" class="stays">
+        <div class="container">
+            <h2 class="section-title">Find Your Perfect Stay</h2>
+            <div class="stays-grid" id="staysGrid">
+                <!-- Stays will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Details Modal -->
+    <div id="destinationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Stay Details Modal -->
+    <div id="stayModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body" id="stayModalBody">
+                <!-- Stay modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner">
+        <div class="spinner"></div>
+        <p>Searching for amazing destinations...</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eco Trails</h3>
+                    <p>Your gateway to exploring the incredible diversity and beauty of India</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#stays">Stays</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Eco Trails. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
