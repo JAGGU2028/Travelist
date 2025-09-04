@@ -1,4 +1,4 @@
-# Wanderlust - Travel & Tourism Website
+# Travel & Tourism Website
 
 A modern, responsive travel and tourism website that helps users discover amazing destinations and find the perfect accommodations for their journey.
 
